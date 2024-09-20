@@ -27,10 +27,11 @@
  */
 
 import { createRoot } from 'react-dom/client';
-import './tailwind.output.css';
+import './tailwind.css';
 import App from './App';
 
 const msg = await window.electron.hello();
 
 const root = createRoot(document.getElementById('root'));
 root.render(App(msg));
+
